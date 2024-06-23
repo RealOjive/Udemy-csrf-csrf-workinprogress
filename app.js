@@ -21,10 +21,9 @@ const password = -
 const clusterId = -
 const dbName = -
 
-//testing if same secret helps
 const csrfSecret = 'supersecret';
-const sessSecret = csrfSecret;
-const cookieParserSecret = csrfSecret;
+const sessSecret = 'csrfSecret';
+const cookieParserSecret = 'cookieParserSecret';
 
 const MONGODB_URI =
     'mongodb+srv://'+username+':'+password+'@' + clusterId + '.mongodb.net/' + dbName+ '?retryWrites=true&w=majority&appName=Cluster0';
